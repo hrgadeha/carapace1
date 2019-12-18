@@ -1,0 +1,158 @@
+{
+ "allow_rename": 1,
+ "creation": "2019-06-28 14:11:41.386805",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "head_name",
+  "budget",
+  "committed",
+  "incurred",
+  "yet_to_be_committed",
+  "yet_to_be_incurred",
+  "section_break_8",
+  "get_linked_po",
+  "budget_po",
+  "section_break_11",
+  "get_linked_pi",
+  "budget_pi",
+  "section_break_14",
+  "get_linked_exp",
+  "budget_exp",
+  "section_break_17",
+  "get_linked_slp",
+  "budget_salary"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "head_name",
+   "fieldtype": "Link",
+   "label": "Head Name",
+   "options": "Head"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Budget",
+   "reqd": 1
+  },
+  {
+   "fieldname": "committed",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Committed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "incurred",
+   "fieldtype": "Currency",
+   "label": "Incurred",
+   "read_only": 1
+  },
+  {
+   "fieldname": "yet_to_be_committed",
+   "fieldtype": "Currency",
+   "label": "Yet to be committed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "yet_to_be_incurred",
+   "fieldtype": "Currency",
+   "label": "Yet to be Incurred",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_linked_po",
+   "fieldtype": "Button",
+   "label": "Get Linked PO"
+  },
+  {
+   "fieldname": "budget_po",
+   "fieldtype": "Table",
+   "label": "Budget PO",
+   "options": "Budget PO"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_linked_pi",
+   "fieldtype": "Button",
+   "label": "Get Linked PI"
+  },
+  {
+   "fieldname": "budget_pi",
+   "fieldtype": "Table",
+   "label": "Budget PI",
+   "options": "Budget PI"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_linked_exp",
+   "fieldtype": "Button",
+   "label": "Get Linked Exp"
+  },
+  {
+   "fieldname": "budget_exp",
+   "fieldtype": "Table",
+   "label": "Budget Exp",
+   "options": "Budget Exp"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_linked_slp",
+   "fieldtype": "Button",
+   "label": "Get Linked Slp"
+  },
+  {
+   "fieldname": "budget_salary",
+   "fieldtype": "Table",
+   "label": "Budget Salary",
+   "options": "Budget Salary"
+  }
+ ],
+ "modified": "2019-10-18 18:55:33.825125",
+ "modified_by": "Administrator",
+ "module": "Carapace",
+ "name": "Budget Head",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Budget Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
